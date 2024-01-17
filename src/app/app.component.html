@@ -1,0 +1,6 @@
+<td style="background-color: rgb(255, 255, 255);width: 50%;align-items: center;" >
+   <!-- @defering for lazy loading -->
+    @defer(on timer(2000)){ <router-outlet></router-outlet> }
+     @loading(minimum 10s)
+     {<h3 style="color: black;">Loading content......</h3>} </td>
+<!-- <router-outlet></router-outlet> -->
